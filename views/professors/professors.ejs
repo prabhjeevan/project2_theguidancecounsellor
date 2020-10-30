@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<div class="jumbotron">
+    <h1 class="display-4">LIST OF PROFESSORS IN ONTARIO</h1>
+    <p class="lead">If you do not see your professor below, feel free to add a new them by clicking the button below.</p>
+    <hr class="my-4">
+    <p></p>
+    <p id="allhomepagebtns"class="lead">
+      <a id="addbtn" class="btn btn-dark btn-lg" href="professors/new" role="button">ADD A PROF</a>
+    </p>
+  </div>
+  <div class="jumbotron">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <section>
+      <% professor.forEach(function(p) { %>
+    <div id="prof">
+    <div>Name:<%= p.name %> </div>
+    <div>School:<%= p.school %> </div>
+    <div>Course: <%= p.course %></div>
+    <div>Marking Difficulty: <%= p.markingDifficulty %></div>
+    <div>Retake: <%= p.retake %></div>
+    <div>Require Participation:<%= p.requiresParticipation %> </div>
+    <div><a href="/professors/<%= p._id%>">DELETE</a></div>
+  </div>
+    <% }); %>
+  </section>
+  </div>
+
+<%- include('../partials/footer') %>

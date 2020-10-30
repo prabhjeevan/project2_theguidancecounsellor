@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+<div class="jumbotron">
+    <h1 class="display-4">ADD A SCHOOL</h1>
+    <form id="new-form" action="/schools" method="POST">
+        <label id="addschoolname">Name:</label>
+        <input type="text" name="name"> </br>
+        <label id="addschoollocation">City:</label>
+        <input type="text" name="city"></br>
+        <input id="submitnewschool" type="submit" class="btn btn-secondary btn-lg" value="ADD SCHOOL">
+    </form>
+  </div>
+
+<%- include('../partials/footer') %>
+

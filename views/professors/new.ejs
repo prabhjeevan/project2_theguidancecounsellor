@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+<div class="jumbotron">
+    <h1 class="display-4">ADD A PROFESSOR</h1>
+    <form id="new-form" action="/professors" method="POST">
+        <label id="addproflabels">Name:</label>
+        <input type="text" name="name"> </br>
+        <label id="addproflabels">School:</label>
+        <input type="text" name="school"> </br>
+        <label id="addproflabels">Course:</label>
+        <input type="text" name="course"></br>
+        <label id="addproflabels">Marking Difficulty</label>
+        <select id="addproflabels" name="markingDifficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="very hard">Very Hard</option>
+        </select></br>
+       <label id="addproflabels">Would you retake?</label>
+          <select id="addproflabels" name="retake">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+         </select></br>
+         <labelid="addproflabels">Requires participation?</label>
+         <select id="addproflabels" name="participation">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select></br>
+        <input id="submitprof" type="submit" class="btn btn-dark btn-lg" value="ADD PROFESSOR">
+    </form>
+  </div>
+
+<%- include('../partials/footer') %>
+

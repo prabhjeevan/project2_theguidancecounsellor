@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>HOMEPAGE</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-dark bg-dark">
+        <a id="homeicon" class="navbar-toggler" href='/'>
+          <img  src="https://1.bp.blogspot.com/-JSRz8bba9Dw/XTbs0_X53hI/AAAAAAAAKoA/EgX0fP8Fx18PYh5Jjqn0Kwil4NalGbh3wCLcBGAs/s1600/219.png">
+        </a>
+        <a id="navlink" href='/schools' >SCHOOLS</a>
+        <a id="navlink" href='/programs' >PROGRAMS</a>
+        <a id="navlink" href='/professors' >PROFESSORS</a>
+        <% if (user) { %>
+        <a id="navlink" class="loginbtn" href="/logout">Log Out</a>
+        <% } else { %>
+          <a id="navlink" class="loginbtn" href="/auth/google">Login with Google</a>
+        <% } %>
+        
+        
+      </nav>
+         
+
+    
+  <main>
+ 

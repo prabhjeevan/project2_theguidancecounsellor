@@ -1,0 +1,36 @@
+<%- include('../partials/header') %>
+
+<div class="jumbotron">
+    <h1 class="display-4">LIST OF SCHOOLS IN ONTARIO</h1>
+    <p class="lead">Please check the list below for your school before adding another one.</br>If you do not see your institution below, use the add button below.</p>
+    
+    <hr class="my-4">
+    <p></p>
+    <p id="allhomepagebtns"class="lead">
+      <a id="addbtn" class="btn btn-dark btn-lg" href="/schools/new" role="button">Add a School</a>
+    </p>
+  </div>
+
+  <div class="jumbotron">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <section>
+        <% school.forEach(function(s) { %>
+      <div id="school">
+      <div id="schoolname">Name:<span id="breakinname"></span><%= s.name %> </div>
+      <div id="schoollocation">City: <%= s.city %></div>
+      <div id="schoolbtns"> 
+        <a id='addreviewbtn' class= 'btn btn-info btn-sm' href="/schools/<%= s._id%>">REVIEWS</a>
+        <form action="/schools/<%= s.id %>?_method=DELETE" method="POST">
+            <button id="schooldeletebtn" type="submit" class="btn btn-danger btn-sm">DELETE</button> 
+        </form>
+    </div>
+    </div>
+      <% }); %>
+    </section>
+    </div>
+
+    
+    
+<%- include('../partials/footer') %>

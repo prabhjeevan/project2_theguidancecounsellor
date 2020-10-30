@@ -1,0 +1,140 @@
+<%- include('../partials/header') %>
+
+<div class="jumbotron">
+    <h1 class="display-4">ADD YOUR REVIEW</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <section>
+<section id="show-page">
+        <div id="school">
+        <div id="schoolname">Name:<span id="breakinname"></span><%= school.name %> </div>
+        <div id="schoollocation">City: <%= school.city %></div>
+        </div>
+
+<div id="schoolreview">
+
+<form id="add-review-form" method="POST" action="/schools/<%=school._id%>/reviews">
+    <div id="reviewlabels">
+        <div class="form-group">
+          <label for="programname">What program were you in?</label>
+          <textarea class="form-control" name="programName" placeholder="Health Science"></textarea>
+        </div>
+    </div>
+      <div id="reviewlabels" class="form-group">
+        <label for="reviewtext">Review</label>
+        <textarea class="form-control" name="content" rows="3"></textarea>
+      </div>
+<h5>Select a rating from 1 to 5.</br>
+      1 = <strong>LOWEST</strong>  </br>
+      5 =   <strong>BEST</strong></h5>
+<div id="reviewlabels">
+    <div class="form-group">
+        <label for="safetyrating">Safety:</label>
+        <p id="labelexplanation">How safe is the campus/city?</p>
+        <select class="form-control" name="safety">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+</div>
+<div id="reviewlabels">
+    <div class="form-group">
+        <label for="safetyrating">Student Satisfaction</label>
+        <select class="form-control" name="studentSatisfaction">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+</div>
+<div id="reviewlabels">
+    <div class="form-group">
+        <label for="overall">Overall Rating:</label>
+        <select class="form-control" name="overallRating">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        </select>
+  </div>
+</div>
+<div id="reviewlabels">
+    <div class="form-group">
+        <label for="year">Year Added:</label>
+        <select class="form-control" name="year">
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+  </div>
+</div>
+  <input id="submitnewreview" type="submit" class="btn btn-secondary btn-lg" value="ADD REVIEW">
+</form>
+</div>
+</section>
+</div>
+
+
+<div class="jumbotron">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <section>
+<% if (school.reviews.length) { %>
+    
+    <table class="table table-hover table-dark ">
+      <thead id="tabletitle">
+        <tr >
+            <th>Program Name</th>
+            <th>Review</th>
+            <th>Safety</th>
+            <th>Student Satisfaction</th>
+            <th>Overrall Rating</th>
+            <th>Year Added</th>
+            <th>Remove Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% school.reviews.forEach(function(r) { %>
+          <tr>
+            <td><%= r.programName%></td>
+            <td><%= r.content %></td>
+            <td><%= r.safety %></td>
+            <td><%= r.studentSatisfaction %></td>
+            <td><%= r.overallRating %></td>
+            <td><%= r.year %></td>
+            <td> <form action="/reviews/<%=r.id%>?_method=DELETE" method="POST">
+                <button id="schooldeletebtn" type="submit" class="btn btn-danger btn-sm">DELETE</button> 
+            </form></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h5>No Reviews Yet</h5>
+  <% } %>
+</section>
+</div>
+
+
+
+
+<%- include('../partials/footer') %>

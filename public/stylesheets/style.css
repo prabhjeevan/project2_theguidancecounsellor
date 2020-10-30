@@ -1,0 +1,155 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+nav{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#homeicon{
+  width: 60px;
+  background-color: white;
+ 
+}
+#homeicon:hover {
+  background: lime;
+  opacity: 60%;
+}
+
+#navbar{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+#homepagebtns{
+margin: 0 40px;
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+#navlink {
+  text-decoration: none;
+  color: lightgray;
+  padding: 10px 30px;
+  
+}
+#navlink:hover {
+  background: white;
+  color: gray;
+  opacity: 70%;
+  font-size: x-large;
+  border-radius: 5px;
+}
+
+#homesearch {
+  float: right;
+}
+
+#unis {
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 50px;
+
+}
+
+#detailsbtn {
+  font-size: 15px;
+  margin: 25px;
+}
+
+#addproflabels {
+  margin-top: 15px;
+}
+
+#prof{
+  margin-bottom: 39px;
+}
+
+#submitnewschool{
+  border: 1px solid rgba(78, 103, 241, 0.822);
+  background-color: rgba(78, 103, 241, 0.822);
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+#submitnewschool:hover {
+  background: lime;
+  opacity: 70%;
+  color: black;
+}
+#submitnewreview{
+  border: 1px solid rgba(78, 103, 241, 0.822);
+  background-color: rgba(78, 103, 241, 0.822);
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+#submitnewreview:hover {
+  background: lime;
+  opacity: 70%;
+  color: black;
+}
+
+#schoolname{
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#schoollocation{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#breakinname{
+  margin: 0 10px;
+}
+
+#school{
+  margin-bottom: 30px;
+}
+
+#schoolbtns{
+  display: flex;
+}
+
+#schooldeletebtn {
+  margin-left: 20px;
+}
+
+th{
+  color:white;
+}
+#reviewlabels{
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+#submitprof{
+  border: 1px solid rgba(78, 103, 241, 0.822);
+  background-color: rgba(78, 103, 241, 0.822);
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+#submitprof:hover {
+  background: lime;
+  opacity: 70%;
+  color: black;
+}
+
+#labelexplanation {
+  font-size: 30px;
+}
