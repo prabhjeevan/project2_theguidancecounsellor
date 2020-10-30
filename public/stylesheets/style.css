@@ -175,3 +175,13 @@ th{
   font-size: 50px;
   color: rgba(78, 103, 241, 0.822);
 }
+
+#loginrequired{
+  font-family: 'Staatliches', cursive;
+  font-size: 35px;
+  color: rgba(245, 71, 86, 0.822);
+}
+
+.reviewinstructions{
+  font-size: 20px;
+}

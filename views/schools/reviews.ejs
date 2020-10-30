@@ -1,7 +1,10 @@
 <%- include('../partials/header') %>
 
 <div class="jumbotron">
-    <h1 class="display-4">ADD YOUR REVIEW</h1>
+    <h1 class="display-4">ADD YOUR REVIEW <span id="breakinname" class="reviewinstructions">(Scroll down to view reviews)</span></h1>
+    <p id="loginrequired"> LOGIN IS REQUIRED TO ADD</p>
+
+
     <p class="lead"></p>
     <hr class="my-4">
     <section>
@@ -16,12 +19,12 @@
 <form id="add-review-form" method="POST" action="/schools/<%=school._id%>/reviews">
     <div id="reviewlabels">
         <div class="form-group">
-          <label for="programname">What program were you in?</label>
+          <label id="profmain" for="programname">What program were you in?</label>
           <textarea class="form-control" name="programName" placeholder="Health Science"></textarea>
         </div>
     </div>
       <div id="reviewlabels" class="form-group">
-        <label for="reviewtext">Review</label>
+        <label id="profmain" for="reviewtext">Review</label>
         <textarea class="form-control" name="content" rows="3"></textarea>
       </div>
 <h5>Select a rating from 1 to 5.</br>
@@ -29,8 +32,7 @@
       5 =   <strong>BEST</strong></h5>
 <div id="reviewlabels">
     <div class="form-group">
-        <label for="safetyrating">Safety:</label>
-        <p id="labelexplanation">How safe is the campus/city?</p>
+        <label id="profmain" for="safetyrating">Safety:</label>
         <select class="form-control" name="safety">
           <option>1</option>
           <option>2</option>
@@ -42,7 +44,7 @@
 </div>
 <div id="reviewlabels">
     <div class="form-group">
-        <label for="safetyrating">Student Satisfaction</label>
+        <label id="profmain" for="safetyrating">Student Satisfaction</label>
         <select class="form-control" name="studentSatisfaction">
           <option>1</option>
           <option>2</option>
@@ -54,7 +56,7 @@
 </div>
 <div id="reviewlabels">
     <div class="form-group">
-        <label for="overall">Overall Rating:</label>
+        <label id="profmain" for="overall">Overall Rating:</label>
         <select class="form-control" name="overallRating">
         <option>1</option>
         <option>2</option>
@@ -66,7 +68,7 @@
 </div>
 <div id="reviewlabels">
     <div class="form-group">
-        <label for="year">Year Added:</label>
+        <label id="profmain" for="year">Year Added:</label>
         <select class="form-control" name="year">
             <option value="2010">2010</option>
             <option value="2011">2011</option>
@@ -79,10 +81,6 @@
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
         </select>
   </div>
 </div>
