@@ -161,3 +161,8 @@ th{
 #deleteprofbtn {
   margin-top: 15px;
 }
+#extratips {
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+  color: rgba(78, 103, 241, 0.822);
+}

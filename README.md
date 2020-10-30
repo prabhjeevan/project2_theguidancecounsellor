@@ -2,7 +2,7 @@
 
 Welcome to the future of guidance counselling.
 
-Covid has changed the ways a lot of things happen these days. It has become quite impossible to get an appointmnet with your schools guidance counsellor and many high school students are left hanging with their questions about their future school for undergrad.
+Covid has changed the ways a lot of things happen these days. It has become quite impossible to get an appointmnet with your schools guidance counsellor and many high school students are left hanging with their questions about their future school for undergrad. This is where this app _THE GUIDANCE COUNSELLOR_ comes in. Here the alumnis or current students will be able to post reviews about their schools, profs, and programs so the future students can come here and have a better understanding of what they are getting into.
 
 
 #### __When you first open the game you will be presented with this screen.__
