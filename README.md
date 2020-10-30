@@ -1,4 +1,4 @@
-# __HANGMAN__
+# __THE GUIDANCE COUNSELLOR__
 
 Welcome to the future of guidance counselling.
 
