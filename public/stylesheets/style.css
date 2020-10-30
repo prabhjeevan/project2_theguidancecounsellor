@@ -153,3 +153,11 @@ th{
 #labelexplanation {
   font-size: 30px;
 }
+
+#prof {
+  font-size: 15px;
+}
+
+#deleteprofbtn {
+  margin-top: 15px;
+}

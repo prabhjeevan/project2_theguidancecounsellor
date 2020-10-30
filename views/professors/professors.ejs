@@ -12,16 +12,17 @@
     <h1 class="display-4"></h1>
     <p class="lead"></p>
     <hr class="my-4">
+    
     <section>
       <% professor.forEach(function(p) { %>
     <div id="prof">
-    <div>Name:<%= p.name %> </div>
-    <div>School:<%= p.school %> </div>
-    <div>Course: <%= p.course %></div>
-    <div>Marking Difficulty: <%= p.markingDifficulty %></div>
-    <div>Retake: <%= p.retake %></div>
-    <div>Require Participation:<%= p.participation %> </div>
-    <div><a href="/professors/<%= p._id%>">DELETE</a></div>
+    <h4><strong>Name:<span id="breakinname"></span><%= p.name %> </strong></h4>
+    <h4><strong>School:</strong><span id="breakinname"></span><%= p.school %> </h4>
+    <div><strong>Course:</strong><span id="breakinname"></span> <%= p.course %></div>
+    <div><strong>Marking Difficulty: </strong><span id="breakinname"></span><%= p.markingDifficulty %></div>
+    <div><strong>Retake:</strong><span id="breakinname"></span> <%= p.retake %></div>
+    <div><strong> Require Participation:</strong><span id="breakinname"></span><%= p.participation %> </div>
+    <div><a  id="deleteprofbtn" class="btn btn-danger btn-sm" href="/professors/<%= p._id%>">DELETE</a></div>
   </div>
     <% }); %>
   </section>
