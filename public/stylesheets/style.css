@@ -158,12 +158,14 @@ th{
   font-family: 'Staatliches', cursive;
   color: rgba(55, 52, 212, 0.822);
   font-size: 30px;
+  margin-top: 5px;
 }
 
-#profsub{ 
+#profsubheading{ 
   font-family: 'Staatliches', cursive;
   color: rgba(109, 107, 247, 0.822);
   font-size: 20px;
+  margin-top: 5px;
 }
 
 

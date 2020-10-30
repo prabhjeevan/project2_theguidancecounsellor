@@ -6,6 +6,7 @@
     <p></p>
     <p id="allhomepagebtns"class="lead">
       <a id="addbtn" class="btn btn-dark btn-lg" href="professors/new" role="button">ADD A PROF</a>
+      <p id="loginrequired"> LOGIN IS REQUIRED TO ADD</p>
     </p>
   </div>
   <div class="jumbotron">
@@ -18,10 +19,10 @@
     <div id="prof">
     <div id="profmain"><strong>Name:<span id="breakinname"></span><%= p.name %> </strong></div>
     <div id="profmain"><strong>School:</strong><span id="breakinname"></span><%= p.school %> </div>
-    <div id="profsub"><strong>Course:</strong><span id="breakinname"></span> <%= p.course %></div>
-    <div id="profsub"><strong>Marking Difficulty: </strong><span id="breakinname"></span><%= p.markingDifficulty %></div>
-    <div id="profsub"><strong>Retake:</strong><span id="breakinname"></span> <%= p.retake %></div>
-    <div id="profsub"><strong> Require Participation:</strong><span id="breakinname"></span><%= p.participation %> </div>
+    <div id="profsubheading"><strong>Course:</strong><span id="breakinname"></span> <%= p.course %></div>
+    <div id="profsubheading"><strong>Marking Difficulty: </strong><span id="breakinname"></span><%= p.markingDifficulty %></div>
+    <div id="profsubheading"><strong>Retake:</strong><span id="breakinname"></span> <%= p.retake %></div>
+    <div id="profsubheading"><strong> Require Participation:</strong><span id="breakinname"></span><%= p.participation %> </div>
     <div><a  id="deleteprofbtn" class="btn btn-danger btn-sm" href="/professors/<%= p._id%>">DELETE</a></div>
   </div>
     <% }); %>
