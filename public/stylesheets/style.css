@@ -13,6 +13,13 @@ nav{
   background-color: white;
  
 }
+
+#maintitle{
+  font-family: 'Staatliches', cursive;
+  font-size: 100px;
+  color: #00B7FF;
+}
+
 #homeicon:hover {
   background: lime;
   opacity: 60%;
