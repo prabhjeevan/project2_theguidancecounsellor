@@ -154,9 +154,18 @@ th{
   font-size: 30px;
 }
 
-#prof {
-  font-size: 15px;
+#profmain{ 
+  font-family: 'Staatliches', cursive;
+  color: rgba(55, 52, 212, 0.822);
+  font-size: 30px;
 }
+
+#profsub{ 
+  font-family: 'Staatliches', cursive;
+  color: rgba(109, 107, 247, 0.822);
+  font-size: 20px;
+}
+
 
 #deleteprofbtn {
   margin-top: 15px;

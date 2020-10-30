@@ -16,16 +16,17 @@
     <section>
       <% professor.forEach(function(p) { %>
     <div id="prof">
-    <h4><strong>Name:<span id="breakinname"></span><%= p.name %> </strong></h4>
-    <h4><strong>School:</strong><span id="breakinname"></span><%= p.school %> </h4>
-    <div><strong>Course:</strong><span id="breakinname"></span> <%= p.course %></div>
-    <div><strong>Marking Difficulty: </strong><span id="breakinname"></span><%= p.markingDifficulty %></div>
-    <div><strong>Retake:</strong><span id="breakinname"></span> <%= p.retake %></div>
-    <div><strong> Require Participation:</strong><span id="breakinname"></span><%= p.participation %> </div>
+    <div id="profmain"><strong>Name:<span id="breakinname"></span><%= p.name %> </strong></div>
+    <div id="profmain"><strong>School:</strong><span id="breakinname"></span><%= p.school %> </div>
+    <div id="profsub"><strong>Course:</strong><span id="breakinname"></span> <%= p.course %></div>
+    <div id="profsub"><strong>Marking Difficulty: </strong><span id="breakinname"></span><%= p.markingDifficulty %></div>
+    <div id="profsub"><strong>Retake:</strong><span id="breakinname"></span> <%= p.retake %></div>
+    <div id="profsub"><strong> Require Participation:</strong><span id="breakinname"></span><%= p.participation %> </div>
     <div><a  id="deleteprofbtn" class="btn btn-danger btn-sm" href="/professors/<%= p._id%>">DELETE</a></div>
   </div>
     <% }); %>
   </section>
   </div>
 
+  
 <%- include('../partials/footer') %>
